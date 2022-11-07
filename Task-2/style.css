@@ -126,7 +126,7 @@
     background-color: #1C1E22;
     color: white;
 
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid white;
     padding-left: 40px;
     margin-left: auto;
@@ -150,6 +150,7 @@
 
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 150px;
 }
 
 .projects__title {
@@ -165,7 +166,7 @@
 .projects__button {
     width: 13.6em;
     height: 3em;
-    border-radius: 20px;
+    border-radius: 8px;
 
     align-self: center;
 
@@ -178,4 +179,49 @@
 }
 
 /* FOOTER */
+
+.footer {
+    height: 18.8125em;
+}
+
+.footer__block {
+    height: 6.75em;
+    margin-left: 100px;
+
+    display: flex;
+    gap: 8.0625em;
+}
+
+.footer__logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.footer__menu {
+    font-weight: 400;
+    font-size: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__subtitle {
+    font-size: 0.94em;
+    font-weight: 500;
+    color: #85BFD1;
+    margin-top: 0;
+}
+
+.footer__social-media {
+    margin-top: 30px;   
+}
+
+.footer__icon {
+    margin-right: 10px;
+}
+
+
+
+
 
