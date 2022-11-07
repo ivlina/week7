@@ -1,4 +1,100 @@
-body {
+.root {
+    background-color: black;
     color: white;
-    background-color: #171718;
 }
+
+/* HEADER */
+
+.header__introduction {
+    height: 45.75em;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    width: 100vw;
+    height: 36.3225em;
+}
+
+.about-section__card {
+    background-color: #1C1E22;
+    border: 1px solid #26292D;
+    border-radius: 10px;
+
+    width: 60.4375em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+}
+
+.about-section__miguel-picture {
+    grid-row: 1 / 5;
+    border-radius: 10px;
+}
+
+.about-section__title {
+    font-size: 3em;
+    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-section__paragraph {
+    padding-left: 40px;
+    font-size: larger;
+}
+
+.about-section__button {
+    background-color: #1C1E22;
+    color: white;
+
+    border-radius: 10px;
+    border: 1px solid white;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 12.375em;
+    height: 3em;
+}
+
+
+
+/* PROJECTS SECTION */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.projects__title {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.projects__example {
+    border-radius: 10px;
+}
+
+.projects__button {
+    width: 13.6em;
+    height: 3em;
+    border-radius: 20px;
+
+    align-self: center;
+
+    background-color: #5C62EC;
+    color: white;
+}
+
+/* FOOTER */
+

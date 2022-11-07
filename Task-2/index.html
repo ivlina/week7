@@ -10,46 +10,55 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        <p>Miguel UI</p>
-        <nav>
-          <ul>
-            <li>Inicio</li>
-            <li>Acerca de mi</li>
-            <li>Proyectos</li>
-            <li>Contáctame</li>
-          </ul>
+  <div class="root">
+
+<!-- HEADER -->
+
+    <header class="header">
+      <div class="header__navigation">
+        <p class="header__logo">Miguel UI</p>
+        <nav class="header__navigation-bar">
+          <p>Inicio</p>
+          <p>Acerca de mi</p>
+          <p>Proyectos</li>
+          <p>Contáctame</li>
         </nav>
       </div>
-      <div>
-        <h1>Soy Miguel Ruz.Diseñador UI</h1>
-        <h2>Este es mi Portafolio web!</h2>
-        <button>Ver proyectos</button>
-        <button><img src="assets/icons/download-icon.png" alt="Download icon"> Descargar CV</button>
+
+      <div class="header__introduction">
+        <h1 class="introduction__title">Soy <span class="introduction__title-name">Ruz.Diseñador UI</span></h1>
+        <h2 class="introduction__subtitle">Este es mi Portafolio web!</h2>
+        <button class="introduction__button">Ver proyectos</button>
+        <button class="introduction__button"><img src="assets/icons/download-icon.png" alt="Download icon"> Descargar CV</button>
       </div>
     </header>
 
-    <main>
-      <div>
-        <img src="assets/pictures/photo-of-miguel.png" alt="Picture of Miguel" />
-        <h2>Acerca de mi</h2>
-        <p>Hola! mi nombre es Miguel y tengo gran afinidad hacía el trabajo colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador UI, considero que un buen producto no solo brinda una solución sino que permite crear una experiencia emocional en las personas que lo usan.</p>
-        <p>En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator que me ayudan en el flujo de trabajo para la producción de interfaces de usuario.</p>
-        <button>Mas acerca de mi<img src="assets/pictures/project-example.jpg" alt="Next icon"></button>
+    <!-- ABOUT SECTION -->
+
+    <main class="about-section">
+      <div class="about-section__card">
+        <img src="assets/pictures/photo-of-miguel.png" alt="Picture of Miguel" class="about-section__miguel-picture" />
+        <h2 class="about-section__title">Acerca de mi</h2>
+        <p class="about-section__paragraph">Hola! mi nombre es Miguel y tengo gran afinidad hacía el trabajo colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador UI, considero que un buen producto no solo brinda una solución sino que permite crear una experiencia emocional en las personas que lo usan.</p>
+        <p class="about-section__paragraph">En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator que me ayudan en el flujo de trabajo para la producción de interfaces de usuario.</p>
+        <button class="about-section__button">Mas acerca de mi <img src="assets/icons/next-icon.png" alt="Next icon"></button>
       </div>
     </main>
 
-    <section>
-        <h3>Proyectos</h3>
-        <img src="assets/pictures/project-example.jpg" alt="Project 1">
-        <img src="assets/pictures/project-example.jpg" alt="Project 2">
-        <img src="assets/pictures/project-example.jpg" alt="Project 3">
-        <img src="assets/pictures/project-example.jpg" alt="Project 4">
-        <button>Ver más en Behance<img src="assets/icons/next-icon.png" alt="Next icon"></button>
+    <!-- PROJECTS SECTION -->
+
+    <section class="projects">
+        <h3 class="projects__title">Proyectos</h3>
+        <img src="assets/pictures/project-example.jpg" alt="Project 1" class="projects__example">
+        <img src="assets/pictures/project-example.jpg" alt="Project 2" class="projects__example">
+        <img src="assets/pictures/project-example.jpg" alt="Project 3" class="projects__example">
+        <img src="assets/pictures/project-example.jpg" alt="Project 4" class="projects__example">
+        <button class="projects__button">Ver más en Behance <img src="assets/icons/next-icon.png" alt="Next icon"></button>
     </section>
 
-    <footer>
+    <!-- FOOTER -->
+
+    <footer class="footer">
         <p>Miguel UI</p>
     </footer>
     <div>
@@ -68,5 +77,7 @@
       <img src="assets/icons/linkedin-icon.png" alt="Linkedin icon">
       <img src="assets/icons/figma-icon.png" alt="Figma icon">
     </div>
+
+  </div>
   </body>
 </html>
