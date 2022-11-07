@@ -1,12 +1,84 @@
 .root {
     background-color: black;
     color: white;
+
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
 
+/* Navigation */
+
+
+
+/* Main part */
+
 .header__introduction {
     height: 45.75em;
+}
+
+.header__introduction-block {
+    height: 18.75em;
+    width: 33.125em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+}
+
+.introduction__title,
+.introduction__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.introduction__title {
+    font-size: 3.75em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.introduction__title-name {
+    color: #5C62EC;
+    font-weight: 500;
+}
+
+.introduction__subtitle {
+    font-size: 1.25em;
+}
+
+.introduction__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.introduction__button {
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+
+    width: 10.5625em;
+    height: 3em;
+}
+
+.introduction__button-1 {
+    background-color: #5C62EC;
+    margin-right: 12px;
+}
+
+.introduction__button-1:hover {
+    background-color: black;
+}
+
+.introduction__button-2 {
+    background-color: black;
+    margin-left: 12px;
+}
+
+.introduction__button-2:hover {
+    background-color: #5C62EC;
 }
 
 /* ABOUT SECTION */
@@ -38,6 +110,7 @@
 
 .about-section__title {
     font-size: 3em;
+    font-weight: 500;
     padding-left: 40px;
     margin-top: 0;
     margin-bottom: 0;
@@ -46,6 +119,7 @@
 .about-section__paragraph {
     padding-left: 40px;
     font-size: larger;
+    font-weight: 400;
 }
 
 .about-section__button {
@@ -62,7 +136,9 @@
     height: 3em;
 }
 
-
+.about-section__button:hover {
+    background-color: #5C62EC;
+}
 
 /* PROJECTS SECTION */
 
@@ -78,6 +154,7 @@
 
 .projects__title {
     font-size: 2em;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -94,6 +171,10 @@
 
     background-color: #5C62EC;
     color: white;
+}
+
+.projects__button:hover {
+    background-color: black;
 }
 
 /* FOOTER */
