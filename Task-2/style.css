@@ -107,56 +107,44 @@
 
 @media (max-width: 767px) {
     .header__introduction {
-        height: 45.75em;
+        height: 29em;
     }
-    
+
     .header__introduction-block {
-        height: 18.75em;
-        width: 33.125em;
+        height: auto;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 8em;
+        margin-top: 4.5em;
     }
-    
-    .introduction__title,
-    .introduction__subtitle {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        
-    }
-    
+
     .introduction__title {
-        font-size: 3.75em;
-        font-weight: 700;
-        margin-bottom: 0;
-    }
-    
-    .introduction__title-name {
-        color: #5C62EC;
+        font-size: 2.125em;
         font-weight: 500;
     }
-    
-    .introduction__subtitle {
-        font-size: 1.25em;
+
+    .introduction__title-name {
+        font-weight: 500;
     }
-    
+
+    .introduction__subtitle {
+        font-size: 1em;
+    }
+
     .introduction__buttons {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .introduction__button {
-        width: 10.5625em;
-        height: 3em;
-    }
-    
+
     .introduction__button-1 {
-        margin-right: 12px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     
     .introduction__button-2 {
-        margin-left: 12px;
+        margin-left: 0;
     }
 }
 
