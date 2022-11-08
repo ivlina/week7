@@ -14,26 +14,139 @@
     height: 4.3125em;
     border-bottom: 1px solid white;
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header__logo {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 50%;
+    margin-top: 20px;
+    float: left;
 
     font-weight: 600;
     font-size: 1.5em;
 }
 
 .header__navigation-bar {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    margin-right: 100px;
+    display: flex;
+    gap: 23px;
+    float: right;
+    margin-top: 25px;
 
     font-weight: 500;
     font-size: 1em;
+}
+
+.navigation-bar__choice {
+    margin-top: 0;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header__navigation-bar {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 10%;
+      
+        width: 26px;
+        height: 26px;
+      
+        cursor: pointer;
+        z-index: 4;
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+      
+        width: 100%;
+        height: 4px;
+        border-radius: 30px;
+      
+        background-color: white;
+      
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      .menu__box {
+        display: block;
+        position: fixed;
+        z-index: 4;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+      
+        width: 50vw;
+        height: 100%;
+      
+        margin: 0;
+        padding: 80px 0;
+      
+        list-style: none;
+      
+        background-color: #26292D;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      
+        transition-duration: .25s;
+      }
+      
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+      
+        color: white;
+      
+        font-size: 20px;
+        font-weight: 500;
+      
+        text-decoration: none;
+      
+        transition-duration: .25s;
+      }
+      .menu__item:hover {
+        background-color: #5C62EC;
+      }
 }
 
 /* Main part */
